@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#29B6F6</color> <!-- 400 -->
+    <color name="colorPrimaryDark">#03A9F4</color> <!-- 500 -->
+    <color name="colorPrimaryLight">#B3E5FC</color> <!-- 100 -->
+    <color name="colorAccent">#81D4FA</color> <!-- 200 -->
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="addHushedPlace">#4FC3F7</color> <!-- 300 -->
+    <color name="white">#fff</color>
+    <color name="colorIcon">#B3E5FC</color>
+    <color name="black">#000</color>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Hushed</string>
+    <string name="insufficient_permissions">Insufficient permissions.</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="ok">ok</string>
+    <string name="no_place_determined">No place determined</string>
+    <string name="get_place">Get Place</string>
+    <string name="dialog_permission_do_not_disturb">Allow application access to the devices Do Not Disturb settings, to automatically set the sound audio mode?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ringer_mode_dialog_messge">Permission To Access Ringer Mode</string>
+
+    <!-- API KEY -->
+    <string name="google_places_api" translatable="false">AIzaSyCHX68SB44zJKEsW-gy6S9sw31qAzxT5d8</string>
+    <string name="save">Save</string>
+    <string name="silent">Silent</string>
+    <string name="vibrate">Vibrate</string>
+
+    <string-array name="places">
+        <item>School</item>
+        <item>Movie Theater/Cinema</item>
+        <item>Supermarket</item>
+    </string-array>
+
+    <string name="application_initialized">0</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleted">Deleted</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="places">Places</string>
+    <string name="map">Map</string>
+
+    <string name="place_name">place_name</string>
+    <string name="vicinity">vicinity</string>
+    <string name="types">types</string>
+    <string name="longitude">lng</string>
+    <string name="latitude">lat</string>
+    <string name="hash_symbol">#</string>
+    <string name="launch_map">Launch Map</string>
+    <string name="select_from_map">Select from map…</string>
+</resources>

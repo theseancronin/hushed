@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.shnellers.hushed.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_panel">
+
+        <fragment
+            android:id="@+id/frag_rv_hushed_places"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.android.shnellers.hushed.components.HushedPlacesRecyclerView"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/hidden"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/top"
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_centerInParent="true"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_hushed_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_expand_less_white"
+                app:fabSize="mini"
+                android:layout_margin="16dp"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.android.shnellers.hushed.components.AddNewHushedPlaceFragment"
+            android:id="@+id/frag_add_hushed_place"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

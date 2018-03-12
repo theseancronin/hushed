@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="50"
+    android:viewportHeight="50">
+
+    <path
+        android:fillColor="@color/colorIcon"
+        android:pathData="M37 1c-.55 0-1 .45-1 1v14c0 .55-.45 1-1 1h-20c-.55
+0-1-.45-1-1v-14c0-.55-.45-1-1-1h-9c-.55 0-1 .45-1 1v46c0 .55 .45 1 1 1h9c.55 0
+1-.45 1-1v-16c0-.55 .45 -1 1-1h20c.55 0 1 .45 1 1v16c0 .55 .45 1 1 1h9c.55 0
+1-.45 1-1v-46c0-.55-.45-1-1-1h-9z" />
+</vector>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/addHushedPlace">
+
+    <LinearLayout
+        android:id="@+id/ll_type_or_map"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/btn_types"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/places"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/map"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_spinner_or_map"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_type_or_map"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+        <RelativeLayout
+            android:id="@+id/rl_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Spinner
+                android:id="@+id/spinner_places_types"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_border"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_custom_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/select_from_map"
+                android:textSize="18sp"
+                android:gravity="bottom|start"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:layout_toStartOf="@+id/btn_select_from_map"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_select_from_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_add_location"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_spinner_or_map"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/mode_silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/silent"
+            android:layout_marginEnd="5dp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/mode_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/vibrate"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:text="@string/save"
+        android:layout_below="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>
